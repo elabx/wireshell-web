@@ -1,0 +1,64 @@
+{
+  "title": "WireShell",
+  "subtitle": "wireshell",
+  "keywords": "ProcessWire, PHP, Command line, Terminal, shell, zsh, symfony, console",
+  "url": "https://wireshell.pw/",
+  "description": "Easily extendedable command-line interface for CMS/CMF ProcessWire based on Symfony Console component.",
+  "author": {
+    "name": "WireShell",
+    "email": "hello@wireshell.pw",
+    "twitterName": "wireshell"
+  },
+  "links": {
+    "twitter": "https://twitter.com/wiresh3ll",
+    "github": "https://github.com/wireshell"
+  },
+  "nav": [
+    {
+      "name": "what-is-wireshell",
+      "title": "What is wireshell?",
+      "sub": [
+        {
+          "name": "usage-example",
+          "title": "Usage example"
+        }
+      ]
+    },
+    {
+      "name": "getting-started",
+      "title": "getting started",
+      "sub": [
+        {
+          "name": "installation",
+          "title": "Installation"
+        },
+        {
+          "name": "upgrading",
+          "title": "Upgrading"
+        },
+        {
+          "name": "documentation",
+          "title": "Documentation"
+        }
+      ]
+    },
+    {
+      "name": "extending",
+      "title": "Extending",
+      "sub": [
+        {
+          "name": "contributors",
+          "title": "Contributors"
+        },
+        {
+          "name": "guide",
+          "title": "Guide"
+        },
+        {
+          "name": "support",
+          "title": "Support"
+        }
+      ]
+    }
+  ]
+}

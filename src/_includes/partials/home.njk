@@ -1,0 +1,119 @@
+<h1>wireshell</h1>
+    <cite>ProcessWire command-line companion</cite>
+
+    <section class="wrapper--hr">
+      <h2 class="js-nav-item" data-url="what-is-wireshell">What is wireshell?</h2>
+      <div class="wrapper--section">
+        <section class="wrapper--part">
+          <p>A command-line interface for CMS/CMF <a href="https://processwire.com/">ProcessWire</a> based on Symfony Console component. Can be easily extended through ProcessWire's ability of being bootstrapped into other applications, its great <a href="https://processwire.com/api/">API</a>, and Symfony Console's <a href="http://symfony.com/doc/current/components/console.html">modular command approach</a>.</p>
+        </section>
+        <section class="wrapper--part">
+          <h3 class="js-nav-item" data-url="usage-example">
+            <span>Usage example</span>
+          </h3>
+          <p>Here's a short demonstration of wireshell. Of course it covers only a small portion of it's functionality, so please have a look at the list of <a href="https://docs.wireshell.pw/en/latest/commands/backup/">available commands</a> to see what's possible.</p>
+          <div class="macfront  js-macfront">
+            <img src="/assets/img/preview.svg" rel:animated_src="/assets/img/commandnew.gif" alt="" rel:auto_play="0" data-isplayed="0"/>
+          </div>
+        </section>
+      </div>
+    </section>
+
+          <section class="wrapper--hr">
+        <h2 class="js-nav-item" data-url="getting-started">
+    Getting Started
+  </h2>
+        <div class="wrapper--section">
+                      <section class="wrapper--part">
+              <h3 class="js-nav-item" data-url="installation">
+  <span>  Installation
+  </span></h3>
+              <p>Wireshell requires <a href="https://getcomposer.org/">Composer</a> and a local PHP installation &gt;= 5.4.0, and – of course – ProcessWire.</p>
+<ol>
+<li>Download and install Composer <a href="https://getcomposer.org/doc/00-intro.md#globally">globally</a> (if it isn't on your system already)</li>
+<li>Run <code>$ composer global require wireshell/wireshell</code></li>
+<li>Add wireshell to your system path (in .bashrc or similar):<br />
+<strong>unix-based systems:</strong> <code>export PATH="$HOME/.composer/vendor/bin:$PATH"</code><br />
+<strong>Windows:</strong> <code>%appdata%\Composer\vendor\bin</code></li>
+</ol>
+            </section>
+                      <section class="wrapper--part">
+              <h3 class="js-nav-item" data-url="upgrading">
+  <span>  Upgrading
+  </span></h3>
+              <p>You can update update wireshell like any other Composer package: </p>
+<pre><code>$ composer global require wireshell/wireshell:dev-master</code></pre>
+            </section>
+                      <section class="wrapper--part">
+              <h3 class="js-nav-item" data-url="documentation">
+  <span>  Documentation
+  </span></h3>
+              <p>For detailed usage please go to <a href="https://docs.wireshell.pw">wireshell docs</a>.</p>
+            </section>
+                  </div>
+      </section>
+
+      <div class="h-card  p-author  hidden">
+  <h2 class="p-name  card--name">wireshell</h2>
+
+  <img class="hidden u-photo" aria-hidden="true" src="/wireshell.jpg" alt="wireshell" />
+  <a class="u-url" href="/">/</a>
+  <a class="u-url" rel="me" href="https://twitter.com/wiresh3ll">@wiresh3ll</a>
+  <a class="u-url" rel="me" href="https://github.com/wireshell">wireshell</a>
+</div>
+          <section class="wrapper--hr">
+        <h2 class="js-nav-item" data-url="extending">
+    Extending
+  </h2>
+        <div class="wrapper--section">
+                      <section class="wrapper--part">
+              <h3 class="js-nav-item" data-url="contributors">
+  <span>  Contributors
+  </span></h3>
+              <h4>Who can contribute?</h4>
+<p><strong>Anyone!</strong> Thanks for your interest in extending wireshell. Please point your GitHub Pull Request towards the <code>develop</code> branch.</p>
+<h4>Core:</h4>
+<ul>
+<li>Bea David (<a href="https://processwire.com/talk/profile/2759-justb3a/">ProcessWire Forum</a>, <a href="http://github.com/justb3a">GitHub</a>)</li>
+</ul>
+<h4>Community:</h4>
+<ul>
+<li>Camilo Castro (<a href="https://processwire.com/talk/profile/2127-clsource/">ProcessWire Forum</a>, <a href="http://github.com/clsource">GitHub</a>)</li>
+<li>Hari KT (<a href="https://processwire.com/talk/profile/1892-hari-kt/">ProcessWire</a>, <a href="http://github.com/HariKT">GitHub</a>)</li>
+<li>Horst Nogajski (<a href="https://processwire.com/talk/profile/1041-horst/">ProcessWire</a>, <a href="http://github.com/horst-n">GitHub</a>)</li>
+<li>Marcus Herrmann (<a href="https://processwire.com/talk/profile/912-marcus/">ProcessWire Forum</a>, <a href="http://github.com/marcus-herrmann">GitHub</a>)</li>
+<li>Nico Knoll (<a href="https://processwire.com/talk/profile/140-nico-knoll/">ProcessWire</a>, <a href="http://github.com/nicoknoll">GitHub</a>)</li>
+</ul>
+<p>… and probably a few more (if you have the feeling that we should mention you - let us know!)</p>
+            </section>
+                      <section class="wrapper--part">
+              <h3 class="js-nav-item" data-url="guide">
+  <span>  Guide
+  </span></h3>
+              <h4>Symfony</h4>
+<p><strong>Symfony Console</strong> is part of the Symfony Framework and a great workbench for command line apps. There are other command line interfaces for CMS/CMF's around, such as <a href="https://github.com/hechoendrupal/DrupalConsole">DrupalConsole</a>, that are also based on Console. In general commands are single classes with a transparent set of dependencies (Input, Output) wrapped in a single app. Find out more in the <a href="http://symfony.com/doc/current/components/console.html">official documentation</a> and check out sample code. Also have a look at already created wireshell <a href="https://github.com/wireshell/wireshell/tree/master/src">commands</a>.</p>
+<h4>Styleguide</h4>
+<p>In lieu of a formal styleguide, take care to maintain the existing coding style. Note the <code>.editorconfig</code> file in the repository.</p>
+<h4>Output</h4>
+<p>There are a bunch of existing functions to tint the output, to get an overview what's possible, please run <code>wireshell write</code>.</p>
+            </section>
+                      <section class="wrapper--part">
+              <h3 class="js-nav-item" data-url="support">
+  <span>  Support
+  </span></h3>
+              <p>We support you through different channels: the ever growing wireshell <a href="https://processwire.com/talk/topic/9494-wireshell-an-extendable-processwire-command-line-interface/?view=getlastpost">forum topic</a> and
+the project on <a href="https://github.com/wireshell/wireshell">GitHub</a> - if you've got any problems with or ideas for wireshell please feel free to open an issue. </p>
+<p>We're excitedly awaiting your feedback. Your comments and any questions or suggestions are always welcome.</p>
+            </section>
+                  </div>
+      </section>
+
+      <div class="h-card  p-author  hidden">
+  <h2 class="p-name  card--name">wireshell</h2>
+
+  <img class="hidden u-photo" aria-hidden="true" src="/wireshell.jpg" alt="wireshell" />
+  <a class="u-url" href="/">/</a>
+  <a class="u-url" rel="me" href="https://twitter.com/wiresh3ll">@wiresh3ll</a>
+  <a class="u-url" rel="me" href="https://github.com/wireshell">wireshell</a>
+</div>
+

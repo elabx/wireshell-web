@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" class="no-js  no-touch">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <title>{{ metadata.title }} | {{ renderData.title or title or metadata.subtitle }}</title>
+    <meta name="keywords" content="{{ metadata.keywords }}" />
+    <meta name="description" content="{{ metadata.description or description or metadata.description }}" />
+    <meta name="robots" content="follow" />
+    <meta name="author" content="{{ metadata.author.name }}" />
+    <link rel="canonical" href="{{ metadata.url }}" />
+
+    <link href="{{ metadata.links.twitter }}" rel="me" />
+    <link href="{{ metadata.links.github }}" rel="me" />
+    <link href="mailto:{{ metadata.author.email }}" rel="me" />
+
+    <link rel="stylesheet" href="{{ '/assets/css/main.min.css' | url }}">
+  </head>
+
+  <body class="page--{{ templateClass }}">
+    <header class="header">
+
+      <div class="header__logo">
+        <a class="logo  u-url  js-trigger" data-target="home" href="/">
+          {% include 'partials/logo.njk' %}
+          <strong class="logo--title">wireshell</strong>
+        </a>
+      </div>
+
+      <input type="checkbox" class="nav--toggle  js-nav--toggle" name="nav--toggle" value="" id="nav--toggle">
+      <label for="nav--toggle" class="button--nav">
+        <span class="button--nav__inner">
+          Hide / Show navigation
+        </span>
+      </label>
+
+      <div class="header__nav">
+        {% include 'globals/nav-main.njk' %}
+      </div>
+    </header>
+
+    <main class="content  {{ templateMainClass }}">
+      {{ content | safe }}
+    </main>
+
+    {% include 'globals/footer.njk' %}
+
+    <script src="{{ '/assets/js/main.min.js' | url }}"></script>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register("{{ '/serviceworker.js' }}");
+      }
+    </script>
+  </body>
+</html>

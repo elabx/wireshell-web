@@ -1,0 +1,16 @@
+<nav class="nav-main" role="navigation" aria-label="Site Navigation">
+  <ul class="nav-main__list">
+    {%- for nav in metadata.nav -%}
+      <li class="nav-main__list--item">
+        <a class="u-url js-trigger{% if page.url | inNav(nav.name) %} trigger--active{% endif %}" data-target="{{ nav.name }}" href="/{{ nav.name | url }}">{{ nav.title }}</a>
+        <ul>
+          {%- for navsub in nav.sub -%}
+            <li class="nav-main__list--sub">
+              <a class="u-url js-trigger{% if page.url | inNav(nav.name) %} trigger--active{% endif %}" data-target="{{ navsub.name }}" href="/{{ navsub.name }}">{{ navsub.title }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </li>
+    {%- endfor -%}
+  </ul>
+</nav>
